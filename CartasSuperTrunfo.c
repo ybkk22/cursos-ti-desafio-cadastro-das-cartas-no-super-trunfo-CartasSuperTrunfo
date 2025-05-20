@@ -82,7 +82,6 @@ int main() {
     printf("Pontos turísticos: %d\n", pontosTuristicossaopaulo);
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacionalSaoPaulo);
     printf("PIB per capita: R$%.2f reais\n\n", pibpercapitaSaoPaulo);
-
     printf("Carta 2: %s - %s\n", B02, RiodeJaneiro);
     printf("População: %d\n", Populacaoriodojaneiro);
     printf("Área: %.2f km²\n", areaRioDeJaneiro);
@@ -90,15 +89,14 @@ int main() {
     printf("Pontos turísticos: %d\n", pontosTuristicosriodejaneiro);
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacionalRioDeJaneiro);
     printf("PIB per capita: R$%.2f reais\n\n", pibpercapitaRioDeJaneiro);
-    printf("\n--- FIM DAS INFORMAÇÕES ---\n");
 
     printf("\n---- Comparação de Cartas ----\n");
-    printf("População: %s\n", (Populacaosaopaulo > Populacaoriodojaneiro) ? "São Paulo" : "Rio de Janeiro");
-    printf("Área: %s\n", (areaSaoPaulo > areaRioDeJaneiro) ? "São Paulo" : "Rio de Janeiro");
-    printf("PIB: %s\n", (pibSaoPaulo > pibRioDeJaneiro) ? "São Paulo" : "Rio de Janeiro");
-    printf("Pontos turísticos: %s\n", (pontosTuristicossaopaulo > pontosTuristicosriodejaneiro) ? "São Paulo" : "Rio de Janeiro");
-    printf("Densidade populacional (menor é melhor): %s\n", (densidadepopulacionalSaoPaulo < densidadepopulacionalRioDeJaneiro) ? "São Paulo" : "Rio de Janeiro");
-    printf("PIB per capita: %s\n", (pibpercapitaSaoPaulo > pibpercapitaRioDeJaneiro) ? "São Paulo" : "Rio de Janeiro");
+    printf("População: %s\n", (Populacaosaopaulo > Populacaoriodojaneiro) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+    printf("Área: %s\n", (areaSaoPaulo > areaRioDeJaneiro) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+    printf("PIB: %s\n", (pibSaoPaulo > pibRioDeJaneiro) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+    printf("Pontos turísticos: %s\n", (pontosTuristicossaopaulo > pontosTuristicosriodejaneiro) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+    printf("Densidade populacional (menor é melhor): %s\n", (densidadepopulacionalSaoPaulo < densidadepopulacionalRioDeJaneiro) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
+    printf("PIB per capita: %s\n", (pibpercapitaSaoPaulo > pibpercapitaRioDeJaneiro) ? "Carta 1 venceu (1)" : "Carta 2 venceu (0)");
 
     // Resultado final
     printf("\nSuper Poder: %s venceu!\n", (poder1 > poder2) ? "São Paulo" : "Rio de Janeiro");
