@@ -101,11 +101,39 @@ int main() {
     // Resultado final
     printf("\nSuper Poder: %s venceu!\n", (poder1 > poder2) ? "São Paulo" : "Rio de Janeiro");
 
-    // Fórmula do "super poder" (normalizada):
-    // População em milhões + área em mil km² + PIB em bilhões +
-    // pontos turísticos (vezes 10) + PIB per capita (dividido por 10 mil) +
-    // 1 dividido pela densidade populacional
+    /* 
+    Fórmula do "super poder" (normalizada):
+    População em milhões + área em mil km² + PIB em bilhões +
+    pontos turísticos (vezes 10) + PIB per capita (dividido por 10 mil) +
+    1 dividido pela densidade populacional
 
+    
+    Carta 1:
+    Estado: A
+    Código: A01
+    Nome da Cidade: São Paulo
+    População: 12325000
+    Área: 1521.11 km²
+    PIB: 699.28 bilhões de reais
+    Número de Pontos Turísticos: 50
+
+    Carta 2:
+    Estado: B
+    Código: B02
+    Nome da Cidade: Rio de Janeiro
+    População: 6748000
+    Área: 1200.25 km²
+    PIB: 300.50 bilhões de reais
+    Número de Pontos Turísticos: 30 
+ 
+
+    > : Maior que
+    < : Menor que
+    >= : Maior ou igual a
+    <= : Menor ou igual a
+    == : Igual a
+    != : Diferente de
+    */
   
     return 0;
 }
